@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="icon" href="images/favicon.png" sizes="32x32" type="images/png">
+<script src="css/js/app.js" defer></script>
+<title>Password Generator App</title>
+</head>
+<body>
+<main class="container">
+<h1>Password Generator</h1>
+<div class="password_field">
+<span class="password_display">
+<span class="password_placeholder">#kjaklfjj69</span>
+</span>
+<div class="copy_wrapper">
+<span class="copy_text">COPY!</span>
+<button type="button" class="copy_btn">
+<img src="images/icon-copy.svg" alt="Icon" />
+
+</button>
+</div>
+</div>
+<form class="password_setting">
+<div class="char_length">
+<p>Character Length</p>
+<span class="char_count">0</span>
+</div>
+<input 
+type="range"
+ class="char_length_slider"
+  min="1"
+   max="30"
+    value="15" 
+    autocomplete="off"
+/>
+</form>
+
+<div class="char_include_group">
+<label>
+<input type="checkbox" id="uppercase" value="uppercase" />
+<span class="custom_checkbox"></span>
+<p>Include Uppercase letters</p>
+
+</label>
+<label>
+<input type="checkbox" id="lowercase" value="lowercase"/>
+<span class="custom_checkbox"></span>
+<p>Include Lowercase letters</p>
+
+</label>
+<label>
+<input type="checkbox" id="number" value="number"/>
+<span class="custom_checkbox"></span>
+<p>Include Numbers</p>
+</label>
+<label>
+<input type="checkbox" id="symbols" value="symbols" />
+<span class="custom_checkbox"></span>
+<p>Include Symbols</p>
+
+</label>
+</div>
+<div class="strength_box">
+    <span class="strength_label">Strength</span>
+    <div class="strength_rating">
+    <span class="strength_rating_text">Strong</span>
+    <div class="strength_rating_bars">
+    <div class="bar">1</div>
+    <div class="bar">2</div>
+    <div class="bar">3</div>
+    <div class="bar">4</div>
+
+    </div>
+</div>
+</div>
+<button class="generate_btn" type="submit">
+    <span>Generate!</span>
+    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#24232C" d="M5.106 12l6-6-6-6-1.265 1.265 3.841 3.84H0v1.79h7.681l-3.84 3.84z"/>
+    </svg>
+</button>
+
+    </main>
+    </body>
+    </html>
